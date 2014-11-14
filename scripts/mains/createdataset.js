@@ -60,6 +60,7 @@ define(['module'], function (module) {
                             }, function () {
                                 $('#DSDEditorContainer').hide();
                             });
+
                             var datasource = "CountrySTAT";
                             var contextSys = "CountrySTAT";
 
