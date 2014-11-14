@@ -52,7 +52,14 @@ define(['module'], function (module) {
                                 url: 'json/fenix-ui-topmenu_config.json', active: "createdataset"
                             });
 
-                            E.init();
+                            //E.init();
+                            E.init({
+                                subjects: "submodules/fenix-ui-DSDEditor/config/DSDEditor/Subjects.json",
+                                datatypes: "submodules/fenix-ui-DSDEditor/config/DSDEditor/Datatypes.json",
+                                codelists: "submodules/fenix-ui-DSDEditor/config/DSDEditor/Codelists_UNECA.json"
+                            }, function () { $('#DSDEditorContainer').hide(); });
+                            var datasource = "";
+                            var contextSys = "";
 
                             DE.init();
 
@@ -71,7 +78,7 @@ define(['module'], function (module) {
                                 ]);*/
 
 
-                                $('#DSDEditorContainer').hide();
+                                //$('#DSDEditorContainer').hide();
                                 $('#DataEditorContainer').hide();
 
                             }, 2000);
@@ -88,7 +95,7 @@ define(['module'], function (module) {
                             $('body').on("columnEditDone.DSDEditor.fenix", function (e, p) {
                                 var newDSD = {"columns": p.payload};
                                 //E.updateDSD("dan3", null, newDSD);
-                                E.updateDSD(uid, null, newDSD);
+                                E.updateDSD(uid, null, newDSD, datasource, contextSys);
 
                                 $('#DSDEditorContainer').hide();
                                 $('#DataEditorContainer').show();
@@ -138,8 +145,8 @@ define(['module'], function (module) {
                                 console.log(data);*/
 
 
-                                DE.updateData(uid, null, data, function () {
-                                    DE.updateDSD(uid, null, meta.dsd, function () {
+                                DE.updateData(uid, null, data, datasource, contextSys,  function () {
+                                    DE.updateDSD(uid, null, meta.dsd, datasource, contextSys, function () {
                                         window.location.reload();
                                     });
                                 });
