@@ -57,9 +57,11 @@ define(['module'], function (module) {
                                 subjects: "submodules/fenix-ui-DSDEditor/config/DSDEditor/Subjects.json",
                                 datatypes: "submodules/fenix-ui-DSDEditor/config/DSDEditor/Datatypes.json",
                                 codelists: "submodules/fenix-ui-DSDEditor/config/DSDEditor/Codelists_UNECA.json"
-                            }, function () { $('#DSDEditorContainer').hide(); });
-                            var datasource = "";
-                            var contextSys = "";
+                            }, function () {
+                                $('#DSDEditorContainer').hide();
+                            });
+                            var datasource = "CountrySTAT";
+                            var contextSys = "CountrySTAT";
 
                             DE.init();
 
@@ -145,7 +147,7 @@ define(['module'], function (module) {
                                 console.log(data);*/
 
 
-                                DE.updateData(uid, null, data, datasource, contextSys,  function () {
+                                DE.updateData(uid, null, data, function () {
                                     DE.updateDSD(uid, null, meta.dsd, datasource, contextSys, function () {
                                         window.location.reload();
                                     });
