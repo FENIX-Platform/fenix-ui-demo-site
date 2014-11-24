@@ -55,6 +55,14 @@ define(['module'], function (module) {
                                     url: 'json/fenix-ui-topmenu_config.json', active: "createdataset"
                                 });
 
+
+                                //TEST
+                                /*$('#hh').click(function () {
+                                    $('#metadataEditorContainer').hide();
+                                    $('#DSDEditorContainer').show();
+                                });*/
+                                //END TEST
+
                                 E.init({
                                     subjects: "submodules/fenix-ui-DSDEditor/config/DSDEditor/Subjects.json",
                                     datatypes: "submodules/fenix-ui-DSDEditor/config/DSDEditor/Datatypes.json",
@@ -88,15 +96,24 @@ define(['module'], function (module) {
                                     DE.set({ "dsd": newDSD });
                                 })
 
+                               /* $('body').on("columnEditDone.DSDEditor.fenix", function (e, p) {
+                                    var newDSD = { "columns": p.payload };
+                                    E.updateDSD(uid, version, newDSD, datasource, contextSys);
+
+                                    $('#DSDEditorContainer').hide();
+                                    $('#DataEditorContainer').show();
+
+                                    DE.set({ "dsd": newDSD });
+                                    DE.setData();
+                                })*/
+
                                 var datasource = "CountrySTAT";
                                 var contextSys = "CountrySTAT";
-                                /*var datasource = "DanTest";
-                                var contextSys = "DanTest";*/
 
                                 DE.init();
 
-                                var uid = "dan4";
-                                var version = "1.0";
+                                var uid = "";
+                                var version = "";
 
                                 window.setTimeout(function () {
                                     //E.setColumns([{ "id": "CODE", "title": { "EN": "Item" }, "key": true, "dataType": "code", "domain": { "codes": [{ "idCodeList": "UNECA_AgeRange" }] }, "subject": "item", "supplemental": null }, { "id": "YEAR", "title": { "EN": "Year" }, "key": true, "dataType": "year", "domain": null, "subject": "time", "supplemental": null }, { "id": "NUMBER", "title": { "EN": "Val" }, "key": false, "dataType": "number", "subject": "value", "supplemental": null }]);
@@ -116,17 +133,7 @@ define(['module'], function (module) {
 
                                 }, false);
 
-                                $('body').on("columnEditDone.DSDEditor.fenix", function (e, p) {
-                                    var newDSD = { "columns": p.payload };
-                                    //E.updateDSD(uid, version, newDSD, datasource, contextSys);
 
-                                    $('#DSDEditorContainer').hide();
-                                    $('#DataEditorContainer').show();
-
-                                    DE.set({ "dsd": newDSD });
-                                    DE.setData();
-                                    
-                                })
 
                                 $('#createDatasetEnd').on('click', function () {
 
