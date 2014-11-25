@@ -34,9 +34,7 @@ define(['module'], function (module) {
              @param: callback function
              */
             MetadataEditor.initialize('../../submodules/fenix-ui-metadata-editor/js', override, userConfig, function () {
-
                 Editor.initialize('../../submodules/fenix-ui-DSDEditor/js', override, function () {
-
                     DataEditor.initialize('../../submodules/fenix-ui-DataEditor/js', null, function () {
                         DataUpload.initialize('../../submodules/fenix-ui-dataUpload/js', null, function () {
 
@@ -63,23 +61,29 @@ define(['module'], function (module) {
                                 });*/
                                 //END TEST
 
-                                E.init({
-                                    subjects: "submodules/fenix-ui-DSDEditor/config/DSDEditor/Subjects.json",
-                                    datatypes: "submodules/fenix-ui-DSDEditor/config/DSDEditor/Datatypes.json",
-                                    codelists: "submodules/fenix-ui-DSDEditor/config/DSDEditor/Codelists_UNECA.json"
-                                }, function () {
-                                    $('#DSDEditorContainer').hide();
-                                });
+                                var servicesUrls = {
+                                    //metadataUrl: "http://exldvsdmxreg1.ext.fao.org:7788/v2/msd/resources/metadata",
+                                    //dsdUrl: "http://exldvsdmxreg1.ext.fao.org:7788/v2/msd/resources/dsd",
+                                    //dataUrl: "http://exldvsdmxreg1.ext.fao.org:7788/v2/msd/resources"
+                                };
+                                var DSDEditorContainerID = '#DSDEditorMainContainer';
+                                E.init(DSDEditorContainerID,
+                                    {
+                                        subjects: "submodules/fenix-ui-DSDEditor/config/DSDEditor/Subjects.json",
+                                        datatypes: "submodules/fenix-ui-DSDEditor/config/DSDEditor/Datatypes.json",
+                                        codelists: "submodules/fenix-ui-DSDEditor/config/DSDEditor/Codelists_UNECA.json",
+                                        servicesUrls: servicesUrls
+                                    }, function () {
+                                        // $('#DSDEditorContainer').hide();
+                                    });
 
                                 DUpload.init('#divUplaodCSV');
-                                $('body').on("csvUploaded.DataUpload.fenix", function (evt,contents)
-                                {
+                                $('body').on("csvUploaded.DataUpload.fenix", function (evt, contents) {
                                     var existingCols = E.getColumns();
                                     var over = true;
                                     if (existingCols && existingCols.length > 0)
-                                       over= confirm("Overwrite?");
-                                    if (over)
-                                    {
+                                        over = confirm("Overwrite?");
+                                    if (over) {
                                         E.setColumns(contents.columns);
                                     }
                                 });
@@ -96,23 +100,24 @@ define(['module'], function (module) {
                                     DE.set({ "dsd": newDSD });
                                 })
 
-                               /* $('body').on("columnEditDone.DSDEditor.fenix", function (e, p) {
-                                    var newDSD = { "columns": p.payload };
-                                    E.updateDSD(uid, version, newDSD, datasource, contextSys);
-
-                                    $('#DSDEditorContainer').hide();
-                                    $('#DataEditorContainer').show();
-
-                                    DE.set({ "dsd": newDSD });
-                                    DE.setData();
-                                })*/
+                                /* $('body').on("columnEditDone.DSDEditor.fenix", function (e, p) {
+                                     var newDSD = { "columns": p.payload };
+                                     E.updateDSD(uid, version, newDSD, datasource, contextSys);
+ 
+                                     $('#DSDEditorContainer').hide();
+                                     $('#DataEditorContainer').show();
+ 
+                                     DE.set({ "dsd": newDSD });
+                                     DE.setData();
+                                 })*/
 
                                 var datasource = "CountrySTAT";
                                 var contextSys = "CountrySTAT";
 
-                                DE.init();
+                                var dataEditorContainerID = "#DataEditorMainContainer";
+                                DE.init(dataEditorContainerID, { servicesUrls: servicesUrls }, null);
 
-                                var uid = "";
+                                var uid = "dan";
                                 var version = "";
 
                                 window.setTimeout(function () {
@@ -120,7 +125,7 @@ define(['module'], function (module) {
 
                                     //DE.set({ dsd: { columns: [{ "id": "CODE", "title": { "EN": "Item" }, "key": true, "dataType": "code", "domain": { "codes": [{ "idCodeList": "UNECA_AgeRange" }] }, "subject": "item", "supplemental": null }, { "id": "YEAR", "title": { "EN": "Year" }, "key": true, "dataType": "year", "domain": null, "subject": "time", "supplemental": null }, { "id": "NUMBER", "title": { "EN": "Val" }, "key": false, "dataType": "number", "subject": "value", "supplemental": null }] } });
                                     //DE.setData([[1,2,3]]);
-                                   $('#DataEditorContainer').hide();
+                                    $('#DataEditorContainer').hide();
 
                                 }, 2000);
 
