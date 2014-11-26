@@ -55,10 +55,11 @@ define(['module'], function (module) {
 
 
                                 //TEST
-                                /*$('#hh').click(function () {
+                                $('#hh').click(function () {
                                     $('#metadataEditorContainer').hide();
                                     $('#DSDEditorContainer').show();
-                                });*/
+                                    $('#DSDEditorContainer').css('visibility', '');
+                                });
                                 //END TEST
 
                                 var servicesUrls = {
@@ -74,7 +75,7 @@ define(['module'], function (module) {
                                         codelists: "submodules/fenix-ui-DSDEditor/config/DSDEditor/Codelists_UNECA.json",
                                         servicesUrls: servicesUrls
                                     }, function () {
-                                        // $('#DSDEditorContainer').hide();
+                                         $('#DSDEditorContainer').hide();
                                     });
 
                                 DUpload.init('#divUplaodCSV');
@@ -96,6 +97,7 @@ define(['module'], function (module) {
 
                                     $('#DSDEditorContainer').hide();
                                     $('#DataEditorContainer').show();
+                                    $('#DataEditorContainer').css('visibility', '');
 
                                     DE.set({ "dsd": newDSD });
                                 })
@@ -135,6 +137,7 @@ define(['module'], function (module) {
 
                                     $('#metadataEditorContainer').hide();
                                     $('#DSDEditorContainer').show();
+                                    $('#DSDEditorContainer').css('visibility', '');
 
                                 }, false);
 

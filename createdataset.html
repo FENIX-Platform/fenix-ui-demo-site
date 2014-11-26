@@ -56,8 +56,6 @@
 
         <div class="col-md-12 page-header">
             <h1>Fenix Data Editor</h1>
-
-            <p>Welcome to the Fenix Platform Data Editor. You can use the Column editor on the left (1) to add and modify columns. These are displayed in the right side (2), where you can check your personalized columns.  </p>
         </div>
 
     </div>
@@ -65,29 +63,33 @@
 
 
 
+    <button id="hh" type="button">HH</button>
 <!-- FENIX Metadata Editor-->
 <div id="metadataEditorContainer"></div>
 
 <!-- FENIX DSD Container-->
-<div id="DSDEditorContainer" class="container">
-    <div class="row">
-        <div class="col-sm-12   ">
-            <div id="mainContainer" class="row"></div>
-            Upload a CSV<div id="divUplaodCSV"></div>
-            <button id="btnColsEditDone" type="button" class="btn btn-default pull-right">Done</button>
+<!--<div id="DSDEditorContainer" class="container" style="display:none">-->
+    <div id="DSDEditorContainer" class="container" style="visibility:hidden">
+        <p>Welcome to the Fenix Platform Data Editor. You can use the Column editor on the left (1) to add and modify columns. These are displayed in the right side (2), where you can check your personalized columns.</p>
+        <div class="row">
+            <div class="col-sm-12   ">
+                <div id="DSDEditorMainContainer" class="row"></div>
+                Upload a CSV<div id="divUplaodCSV"></div>
+                <button id="btnColsEditDone" type="button" class="btn btn-default pull-right">Done</button>
+            </div>
         </div>
     </div>
-</div>
 
-<div id="DataEditorContainer" class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            <div id="DataEditorMainContainer"></div>
-            <button id="createDatasetEnd" type="button" class="btn btn-default pull-right">Done</button>
 
+
+    <div id="DataEditorContainer" class="container" style="visibility:hidden">
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="DataEditorMainContainer"></div>
+                <button id="createDatasetEnd" type="button" class="btn btn-default pull-right">Done</button>
+            </div>
         </div>
     </div>
-</div>
 
 <div class="container">
     <!-- FOOTER -->
