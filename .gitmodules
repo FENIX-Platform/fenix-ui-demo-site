@@ -31,3 +31,9 @@
 [submodule "submodules/fenix-ui-table-creator"]
 	path = submodules/fenix-ui-table-creator
 	url = https://github.com/FENIX-Platform/fenix-ui-table-creator
+[submodule "submodules/fenix-ui-menu"]
+	path = submodules/fenix-ui-menu
+	url = https://github.com/FENIX-Platform/fenix-ui-menu
+[submodule "submodules/fenix-ui-data-management"]
+	path = submodules/fenix-ui-data-management
+	url = https://github.com/FENIX-Platform/fenix-ui-data-management

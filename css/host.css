@@ -57,6 +57,172 @@
 .icojam_copybook_2:before {
   content: "\e7b5"; }
 
+.icojam_user:before {
+  content: "\ebbb"; }
+
+.icojam_exit_1:before {
+  content: "\eaeb"; }
+
+/* Icons */
+.icojam_fla:before {
+  content: "\e777"; }
+
+.icojam_flac:before {
+  content: "\e778"; }
+
+.icojam_gif:before {
+  content: "\e779"; }
+
+.icojam_html:before {
+  content: "\e77a"; }
+
+.icojam_icl:before {
+  content: "\e77b"; }
+
+.icojam_icns:before {
+  content: "\e77c"; }
+
+.icojam_ico:before {
+  content: "\e77d"; }
+
+.icojam_ini:before {
+  content: "\e77e"; }
+
+.icojam_iso:before {
+  content: "\e77f"; }
+
+.icojam_jpg:before {
+  content: "\e780"; }
+
+.icojam_log:before {
+  content: "\e781"; }
+
+.icojam_midi:before {
+  content: "\e782"; }
+
+.icojam_mkv:before {
+  content: "\e783"; }
+
+.icojam_mov:before {
+  content: "\e784"; }
+
+.icojam_mp3:before {
+  content: "\e785"; }
+
+.icojam_mp4:before {
+  content: "\e786"; }
+
+.icojam_mpg:before {
+  content: "\e787"; }
+
+.icojam_ogg:before {
+  content: "\e788"; }
+
+.icojam_ogm:before {
+  content: "\e789"; }
+
+.icojam_otf:before {
+  content: "\e78a"; }
+
+.icojam_pdf:before {
+  content: "\e78b"; }
+
+.icojam_png:before {
+  content: "\e78c"; }
+
+.icojam_ppt:before {
+  content: "\e78d"; }
+
+.icojam_pptx:before {
+  content: "\e78e"; }
+
+.icojam_psd:before {
+  content: "\e78f"; }
+
+.icojam_ra:before {
+  content: "\e790"; }
+
+.icojam_rar:before {
+  content: "\e791"; }
+
+.icojam_raw:before {
+  content: "\e792"; }
+
+.icojam_rm:before {
+  content: "\e793"; }
+
+.icojam_rtf:before {
+  content: "\e794"; }
+
+.icojam_svg:before {
+  content: "\e795"; }
+
+.icojam_svgz:before {
+  content: "\e796"; }
+
+.icojam_swf:before {
+  content: "\e797"; }
+
+.icojam_sys:before {
+  content: "\e798"; }
+
+.icojam_tga:before {
+  content: "\e799"; }
+
+.icojam_tif:before {
+  content: "\e79a"; }
+
+.icojam_ttf:before {
+  content: "\e79b"; }
+
+.icojam_txt:before {
+  content: "\e79c"; }
+
+.icojam_wav:before {
+  content: "\e79d"; }
+
+.icojam_wma:before {
+  content: "\e79e"; }
+
+.icojam_wmv:before {
+  content: "\e79f"; }
+
+.icojam_xls:before {
+  content: "\e7a0"; }
+
+.icojam_xlsx:before {
+  content: "\e7a1"; }
+
+.icojam_xml:before {
+  content: "\e7a2"; }
+
+.icojam_zip:before {
+  content: "\e7a3"; }
+
+.icojam_presentation:before {
+  content: "\e9b1"; }
+
+.icojam_document:before {
+  content: "\ea3c"; }
+
+.icojam_link_1:before {
+  content: "\ea50"; }
+
+.icojam_base_search_in:before {
+  content: "\e65e"; }
+
+.icojam_add:before {
+  content: "\e656"; }
+
+.icojam_delete:before {
+  content: "\e66a"; }
+
+.icojam_cancel_1:before {
+  content: "\eb55"; }
+
+.icojam_home2:before {
+  content: "\e7c1"; }
+
 /* Roboto */
 /* Roboto Import */
 /* Roboto Regular */
@@ -280,6 +446,12 @@
 .fa-th:before {
   content: "\f00a"; }
 
+.fa-th-list:before {
+  content: "\f00b"; }
+
+.fa-home:before {
+  content: "\f015"; }
+
 .fa-clock-o:before {
   content: "\f017"; }
 
@@ -489,10 +661,89 @@ fieldset {
   fieldset .fx-fieldset-subtitle label {
     font-size: 12px; }
 
+/* Fenix - Bootstrap fixed Height */
+/*The Markup
+You have to add the class .row-same-height inside the row, and also add .col-xs-height to the columns.
+<div class="row">
+    <div class="row-same-height">
+        <div class="col-xs-6 col-xs-height"></div>
+        <div class="col-xs-3 col-xs-height col-top"></div>
+        <div class="col-xs-2 col-xs-height col-middle"></div>
+        <div class="col-xs-1 col-xs-height col-bottom"></div>
+    </div>
+</div>
+If you want to restrict the effect to a certain media query, just use .col-sm-height or .col-md-height or .col-lg-height. You can also use different column sizes on each media query.
+<div class="row">
+    <div class="row-same-height">
+        <div class="col-xs-12 col-sm-6 col-sm-height"></div>
+        <div class="col-xs-6 col-sm-3 col-sm-height col-top"></div>
+        <div class="col-xs-6 col-sm-2 col-sm-height col-middle"></div>
+        <div class="col-xs-6 col-sm-1 col-sm-height col-bottom"></div>
+    </div>
+</div>
+You choose the aligment of each column by using the classes .col-top or .col-middle or .col-bottom.
+*/
+/* vertical alignment styles */
+.col-top {
+  vertical-align: top; }
+
+.col-middle {
+  vertical-align: middle; }
+
+.col-bottom {
+  vertical-align: bottom; }
+
+/* columns of same height styles */
+.row-full-height {
+  height: 100%; }
+
+.col-full-height {
+  height: 100%;
+  vertical-align: middle; }
+
+.row-same-height {
+  display: table;
+  width: 100%;
+  /* fix overflow */
+  table-layout: fixed; }
+
+.col-xs-height {
+  display: table-cell;
+  float: none !important; }
+
+@media (min-width: 768px) {
+  .col-sm-height {
+    display: table-cell;
+    float: none !important; } }
+@media (min-width: 992px) {
+  .col-md-height {
+    display: table-cell;
+    float: none !important; } }
+@media (min-width: 1200px) {
+  .col-lg-height {
+    display: table-cell;
+    float: none !important; } }
 /* Fenix - Inputs Component */
 /* remove x icon in IE 10+ */
 input[type=text]::-ms-clear {
   display: none; }
+
+/* Input Placeholder*/
+.form-control::-webkit-input-placeholder {
+  /* WebKit browsers */
+  opacity: .5; }
+
+.form-control:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  opacity: .5; }
+
+.form-control::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  opacity: .5; }
+
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  opacity: .5; }
 
 /* Fenix - Labels Component */
 label {
@@ -592,16 +843,9 @@ div[data-module="region"] .fx-catalog-modular-form-content {
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   border-color: #ca1a33; }
 
-.nav > li > a {
-  padding: 15px 10px 14px 10px;
-  /* Necessary for the border-bottom */ }
-
-.navbar-default .navbar-nav > li > a {
-  color: #666666;
-  border-bottom: 1px solid transparent; }
-
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-  background-color: #ca1a33; }
+  background-color: transparent;
+  color: #666666; }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #ca1a33; }
@@ -749,6 +993,96 @@ div[data-module="region"] .fx-catalog-modular-form-content {
 .popover {
   width: 200px; }
 
+/* Radio Buttons */
+input[type="radio"] {
+  display: none; }
+
+input[type="radio"] + label {
+  cursor: pointer;
+  margin: 0 7px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500; }
+  input[type="radio"] + label:before {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: #dddddd;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    border: 0 solid #ca1a33;
+    position: relative;
+    top: 4px;
+    left: -4px; }
+
+input[type="radio"]:checked + label {
+  color: #ca1a33; }
+  input[type="radio"]:checked + label:before {
+    border-width: 5px; }
+
+input[type="radio"] + label,
+input[type="radio"]:checked + label {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+  input[type="radio"] + label:before,
+  input[type="radio"]:checked + label:before {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+
+/* Checkbox Buttons */
+input[type="checkbox"] {
+  display: none; }
+
+input[type="checkbox"] + label {
+  cursor: pointer;
+  margin: 0 7px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500; }
+  input[type="checkbox"] + label:before {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: #dddddd;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    border: 0 solid #ca1a33;
+    position: relative;
+    top: 4px;
+    left: -4px; }
+
+input[type="checkbox"]:checked + label {
+  color: #ca1a33; }
+  input[type="checkbox"]:checked + label:before {
+    border-width: 5px; }
+
+input[type="checkbox"] + label,
+input[type="checkbox"]:checked + label {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+  input[type="checkbox"] + label:before,
+  input[type="checkbox"]:checked + label:before {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+
 /* Fenix - Resume Bar Component */
 .fx-resume-bar {
   padding-right: 150px;
@@ -840,46 +1174,25 @@ div[data-module="region"] .fx-catalog-modular-form-content {
 .navbar .container {
   position: relative; }
 
-.navbar-default {
-  background-color: #ffffff; }
-
 .nav-pills li a {
-  color: #336601; }
+  color: #666666; }
 
 .navbar-brand {
   background-image: url("img/fenix-ico.svg");
   background-position: 0 3px;
   background-repeat: no-repeat;
-  background-size: 44px 44px;
-  display: block;
-  height: 50px;
-  padding: 0;
-  width: 50px; }
+  background-size: 100% 100%;
+  display: block; }
 
 .navbar .lang_picker {
-  height: 22px;
-  margin-top: 13px;
   text-transform: uppercase; }
 
 .navbar .lang_picker li {
-  cursor: pointer;
-  float: right; }
+  cursor: pointer; }
 
 .navbar .lang_picker li a, .navbar .lang_picker li a:hover {
-  color: #666666;
-  display: inline-block;
-  font-size: 12px;
-  line-height: 1.7;
-  padding: 0 5px;
   text-align: center;
   text-decoration: none; }
-
-.navbar .lang_picker li a:hover, .navbar .lang_picker li a.selected {
-  background-color: #666666;
-  border-radius: 22px;
-  color: white;
-  height: 22px;
-  width: 22px; }
 
 .navbar .lang_picker li:last-child {
   border-right: medium none; }
@@ -1040,7 +1353,7 @@ div[data-module="region"] .fx-catalog-modular-form-content {
 
 /* Fenix - Widgets Stack Component */
 #fx-widgets-stack {
-  z-index: 500 !important; }
+  z-index: 2 !important; }
 
 #fx-sessionstore-base {
   overflow-x: hidden;
@@ -1142,6 +1455,14 @@ div[data-module="region"] .fx-catalog-modular-form-content {
   position: relative; }
 
 /* Vendor */
+/* Fenix - Facebook Patch */
+#fb-root {
+  display: none; }
+
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important; }
+
 /* Fenix - Intro Js */
 .introjs-helperNumberLayer {
   background: none;
@@ -1597,6 +1918,9 @@ div[data-module="region"] .fx-catalog-modular-form-content {
   background: none;
   background-color: #f9d0d6; }
 
+/* Leaflet */
+/* Fenix Leaflet Import */
+/* Fenix Leaflet Zoom control 0.7.3*/
 /* Pages */
 /* HOMEPAGE */
 .fx-home-header {
