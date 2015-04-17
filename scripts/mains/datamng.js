@@ -49,7 +49,10 @@ require([
                     rsvp: '{FENIX_CDN}/js/rsvp/3.0.17/rsvp',
                     pnotify: '{FENIX_CDN}/js/pnotify/2.0.1/pnotify.custom.min',
 
-                    'fx-d-m/config/config': '../../config/submodules/datamng/config'
+                    'fx-d-m/config/config': '../../config/submodules/datamng/config',
+                    'fx-d-m/config/services': '../../config/submodules/datamng/services',
+                    'fx-cat-br/config/services' : '../../config/submodules/catalog/services'
+
                 },
 
                 // Underscore and Backbone are not AMD-capable per default,

@@ -487,7 +487,7 @@ define([
 
         var self = this;
 
-        $.get('http://faostat3.fao.org/d3s2/v2/msd/resources/uid/UAE_TRADE?dsd=true&full=true', function (dataset) {
+        $.get('http://fenix.fao.org/d3s_fenix/msd/resources/uid/UAE_Trade?dsd=true&full=true', function (dataset) {
 
             self.datasets.trade = dataset;
 			console.log(self.datasets.trade)
@@ -704,7 +704,7 @@ console.log(this.datasets.trade);
 
         var self = this;
 
-        $.get('http://faostat3.fao.org/d3s2/v2/msd/resources/uid/UAE_CropProduction10?dsd=true&full=true', function (dataset) {
+        $.get('http://fenix.fao.org/d3s_fenix/msd/resources/uid/UAE_CropProduction10?dsd=true&full=true', function (dataset) {
 
             self.datasets.production = dataset;
 			
