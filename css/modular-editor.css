@@ -5,6 +5,9 @@
 /* Blurred */
 /* Color Mixins */
 /* Animations */
+/* Fenix UI  DSD Editor  CSS - Colors */
+/* Fenix Colors */
+/* Specials */
 /*========= HEADER =========*/
 .fx-editor-header {
   height: 20px;
@@ -142,6 +145,9 @@
 #fx-editor-menu .panel-body .btn-xs span {
   margin-right: 0; }
 
+#metadataEditorContainer .fx-editor-menu-info {
+  color: #666666; }
+
 /** avoid dotted lines when clicking on button**/
 input[type="button"] {
   outline: none; }
@@ -215,15 +221,17 @@ input[type=text]::-ms-clear {
   text-transform: none;
   font-size: 11px; }
 
+/*========== FORM VALIDATOR ICON POSITION ========== */
 /* Adjust feedback icon position */
 #fx-editor-form .form-control-feedback {
   top: 0px;
-  right: 15px; }
+  right: -15px;
+  /* right: 15px;*/ }
 
-#fx-editor-form .selectContainer .form-control-feedback {
-  top: 0px;
-  right: 25px; }
-
+/**#fx-editor-form .selectContainer .form-control-feedback {
+    top: 0px;
+    right: -15px;
+} **/
 /* date picker */
 .datepicker {
   font-size: 11px; }

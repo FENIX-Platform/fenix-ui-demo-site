@@ -1,0 +1,22 @@
+/*Localconfiguration*/
+#btnFS{display:none !important}
+
+/*#unused li{display:none}*/
+#unused {border: 0px solid gray;
+background: #ffffff ;}
+
+.pvtVals{display:none}
+.pvtAttrDropdown{display:none}
+#vals{display:block}
+
+#vals{display:block}
+.pvtVals{display:block}
+.pvtRenderer{display:block}
+
+#unused li{display:none;}
+#unused{display:none;	float:right			;}
+/*#myGrid1_div{float:right}*/
+.pvtVals{display:none;}
+#nested_by{display:none}
+#filtre_Value{display:none !important}
+.pvtAttrDropdown{display:none}

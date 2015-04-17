@@ -1,0 +1,115 @@
+/* Base */
+// It could be possible to import the fenix-common-ui style and override the variables
+
+body {
+  //background-image: url(img/bg-body.png);
+  background-color: white;
+  padding-top: $host-menu-height;
+}
+
+p{
+  //text-align: justify;
+}
+
+hr{
+  border-color: #e5e5e5;
+}
+
+/* Typography */
+h1, h2, h3, h4{
+
+}
+
+/* Navigation */
+
+/* There is a big problem with navbar-bran. It is defined in Topmenu.css, which is imported at least in the document.
+Using the normal root/css/host.css, is impossible to override the logo without "!important"*/
+//.navbar-brand {
+//  background-image: url("img/uneca-ico.svg") !important;
+//  width: 310px !important;
+//  height: 50px  !important;
+//  background-size: 100% 100%  !important;
+//  background-position: 0 0  !important;
+//  background-color:$fx-cool-blue !important;
+//}
+
+
+.navbar-default .navbar-nav>li>a {
+  padding-bottom: 14px;
+}
+
+.lang_picker_holder{
+  li{
+    float: left;
+    padding: 15px 2px;
+  }
+}
+
+.obj-box{
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: white;
+  border-color: transparent;
+  border-image: none;
+  @include fx-border-radius(0);
+  border-style: solid;
+  border-width: 0;
+  margin: 10px 0 20px;
+  padding: 20px;
+  width: auto;
+}
+
+
+#DSDEditorContainer{
+
+  >.row{
+    margin: 0;
+//    padding: 0 15px;
+  }
+
+}
+
+#modalDataUploadPreview,#divDataEditor,#DSDEditorContainer{
+  input[type="checkbox"]{
+    display: inline;
+  }
+  input[type="radio"]{
+    display: inline;
+  }
+
+}
+
+
+
+
+/* //////////////////// THEMING ///////////////////// */
+
+
+/*///////////////* ANALYSIS */
+
+/*  CATALOG THEMING */
+
+#fx-catalog-submit-btn{
+
+}
+
+.fx-catalog-resume-title{
+
+}
+
+.fx-resume-item-selected .fx-resume-module-title em{  }
+
+
+/*///////////////* DATA EDIT */
+
+#metadataEditorContainer #fx-editor-form .panel-heading{
+
+}
+
+#metadataEditorContainer #fx-editor-form .btn-success{
+
+}
+
+#metadataEditorContainer .panel-title{  }
