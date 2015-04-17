@@ -1,15 +1,6 @@
 {
   "items": [
-    {
-      "attrs": {
-        "id": "browse"
-      },
-      "target": "browse.html",
-      "label": {
-        "EN": "Browse",
-        "FR": "PI"
-      }
-    },
+
     {
       "attrs": {
         "id": "maps"
