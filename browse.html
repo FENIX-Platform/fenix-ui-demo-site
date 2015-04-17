@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>FENIX View</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <meta name="description" content="Fenix  Demo - Browse">
+    <meta name="author" content="Daniele Salvatore <daniele.salvatore [at] fao.org>">
+    <meta name="author" content="Nicola Selleri <nicola.selleri[at]fao.org>">
+
+    <!-- Third Party CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href='http://fenixapps.fao.org/repository/js/jqwidgets/3.2.2/styles/jqx.base.css'/>
+    <link rel="stylesheet" href='//fenixapps.fao.org/repository/js/jstree/3.0.8/dist/themes/default/style.min.css'/>
+	<link rel="stylesheet" href="http://fenixapps.fao.org/repository/js/jquery.rangeslider/5.7.0/css/classic-min.css">
+
+    <!-- Olap -->
+    <link rel="stylesheet" type="text/css" href="submodules/fenix-ui-olap/css/pivot.css">
+    <link rel="stylesheet" type="text/css" href="submodules/fenix-ui-olap/lib/grid/gt_grid_height.css"/>
+	
+    <link rel="stylesheet" type="text/css" href="css/pivot2.css"/>
+
+    <!-- FENIX CSS -->
+    <link rel="stylesheet" href="submodules/fenix-ui-common/css/fenix-style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="css/icons/fx-favicon.ico">
+
+<style type="text/css">
+	.afo-selector-list {
+		height: 125px;
+		overflow-y:scroll;
+	}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row fx-header">
+        <div class="col-xs-12">
+            <div class="page-header">
+                <h1>Sample Browse Section
+                    <small> FENIX </small>
+                </h1>
+                <p>The main goal of data visualization is to communicate information clearly and efficiently to users
+                    via the information graphics selected, such as tables, charts and maps.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-xs-12">
+            <div role="tabpanel">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#by_domain" data-tab='domain' aria-controls="domain"
+                           role="tab"
+                           data-toggle="tab">By Domain</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="by_domain">
+
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <div id="tree_container"></div>
+                            </div>
+
+                            <div class="col-xs-9">
+
+                                <div data-content="trade">
+
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <label for="trade_commodity">Commodity</label>
+
+                                            <div id="trade_commodity"></div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <label for="trade_element">Element</label>
+
+                                            <div id="trade_element"></div>
+                                        </div>
+
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div id="trade_chart"></div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div id="trade_grid"></div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div data-content="production">
+
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <label for="prod_commodity">Commodity</label>
+
+                                            <div id="prod_commodity"></div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <label for="prod_element">Element</label>
+
+                                            <div id="prod_element"></div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div id="prod_chart"></div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div id="prod_grid"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div data-content="olap">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+
+<!-- TODO INSERT TITLE -->
+<div class="row">
+	<div class="col-sm-12">
+		<label class="afo-title-gray">SELECT MONTHS</label>
+		<div id="prices_rangeMonths" class="afo-range"></div>
+    </div>
+    <div class="col-sm-6">
+        <label class="afo-title-gray">SELECT COUNTRY</label>
+        <input type="text" id="country-search-s" value="" class="input form-control">
+        <div id="country-s" class="afo-border afo-selector-list"></div>
+        <button type="button" class="btn btn-default pull-right" id="country-sel-all-s"> Select all</button>
+    </div>
+    <!-- Element list-->
+    <div class="col-xs-6 col-sm-6">
+        <label class="afo-title-gray">SELECT FERTILIZER</label>
+        <input type="text" id="product-search-s" value="" class="input form-control">
+
+        <div id="product-s" class="afo-border afo-selector-list"></div>
+        <button type="button" class="btn btn-default pull-right" id="product-sel-all-s"> Select all</button>
+	</div>
+	<div class="col-xs-12">
+		<input type="button" class="btn btn-default" id="search-btn" value="Search" />
+		<br /><br />	
+	</div>
+</div>
+ <!--div id="olap_container">
+ </div>
+ <div id="fx-olap-holder-div"></div>
+ <div id="myGrid1_div"></div>
+ <div id="mesFlags" style="clear:both"></div-->
+ 
+  <div class="fx-olap-holder">
+            <div id="fx-olap-ui"></div>
+            <div id="fx-olap-holder-div"></div>
+           <div id="fx-olap-graph-div"></div>
+            <div id="myGrid1_div"></div>
+            <div id="mesFlags" style="clear:both"></div>
+        </div>
+        <!--form id="xlsDataForm" action="http://faostat3.fao.org/faostat-olapws/ExportPOI2" method="POST" -->
+        
+        <form id="xlsDataForm" action="/faostat-gateway/go/ExportPOI2" method="POST">
+            <!--textarea id="myJson"  name="myJson" ></textarea-->
+            <input id="myJson"  name="myJson" type="hidden" value="" />
+            <input id="myFlags"  name="myFlags" type="hidden" value='{"data":[{"title":"","label":"Official data"}]}' />
+        </form>
+ 
+ 
+ 
+ 
+ </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="by_country_region">
+
+                        <div id="country_container">
+                            <div id="table_container">
+                                <div class="panel panel-default">
+                                    <!-- Default panel contents -->
+                                    <div class="panel-heading">Emirates</div>
+
+                                    <!-- Table -->
+                                    <table class="table">
+                                        <tbody>
+                                        <tr>
+                                            <td>United Arab Emirates</td>
+                                            <td>Abu Dhabi</td>
+                                            <td>Dubai</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sharjah</td>
+                                            <td>Ajman</td>
+                                            <td>Umm AL Quwain</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ras Al Khaimah</td>
+                                            <td>Fujairah</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="country_details_container">
+
+                            <div class="row">
+
+                                <div class="col-sm-6">
+                                    <h3>Production of commodity </h3>
+
+                                    <div id="c-chart-1"></div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3>Yield of commodity </h3>
+
+                                    <div id="c-chart-2"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h3>Annual growth rate of commodity </h3>
+
+                                    <div id="c-chart-3"></div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3>Most produced commodities </h3>
+
+                                    <div id="c-chart-4"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="by_ranking">
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div id="rank_tree"></div>
+                            </div>
+                            <div class="col-sm-9">
+
+                                <div id="r-chart-1"></div>
+
+                                <div id="table_container_1">
+                                    <div class="panel panel-default">
+                                        <!-- Default panel contents -->
+                                        <div class="panel-heading">Region</div>
+
+                                        <!-- Table -->
+                                        <table class="table">
+                                            <!--
+                                            <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Username</th>
+                                            </tr>
+                                            </thead>-->
+                                            <tbody>
+                                            <tr>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                            </tr><tr>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                            </tr><tr>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                            </tr><tr>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                            </tr><tr>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                            </tr><tr>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                            </tr><tr>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                            </tr><tr>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                                <td>Item</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+
+        <p>2014 FENIX · <a href="#">Terms</a></p>
+    </footer>
+
+</div>
+
+<!-- Javascript
+================================================== -->
+<script data-main="scripts/mains/browse"
+        src="//fenixapps.fao.org/repository/js/requirejs/2.1.15/require.min.js"></script>
+
+</body>
+</html>

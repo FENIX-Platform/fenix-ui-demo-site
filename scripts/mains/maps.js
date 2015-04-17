@@ -3,7 +3,7 @@ requirejs.config({
     baseUrl: 'scripts/lib',
 
     paths : {
-        host : '../view/host',
+        host : '../maps/host',
         json : "../../json",
         structure : '../components/Structure',
         "fenix-ui-topmenu" : '../components/fenix-ui-topmenu',
@@ -20,7 +20,7 @@ requirejs.config({
         'pivot/jquery-ui' : 'http://hqlprfenixapp2.hq.un.fao.org:20300/faostat-download-js/pivotAgg/jquery-ui-1.9.2.custom.min',
         'pivot/pivot': 'http://hqlprfenixapp2.hq.un.fao.org:20300/faostat-download-js/pivotAgg/pivot'
     },
-   
+
     shim: {
         i18n : {
             deps: ['jquery']
@@ -65,10 +65,9 @@ requirejs.config({
     }
 });
 
-require(['fenix-ui-topmenu/main', 'domReady!'], function( TopMenu ) {
+require(['host', 'domReady!'], function( Host ) {
 
-        new TopMenu({
-            url: 'json/fenix-ui-topmenu_config.json', active: "view"
-        });
+    var host = new Host();
+    host.initFenixComponent()
 
 });

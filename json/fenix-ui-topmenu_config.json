@@ -1,66 +1,68 @@
 {
-   "items":[
-      {
-         "attrs":{
-            "id":"view"
-         },
-         "target":"view.html",
-         "label":{
-            "EN":"View",
-            "FR":"PI"
-         }
+  "items": [
+    {
+      "attrs": {
+        "id": "browse"
       },
-      {
-         "attrs":{
-            "id":"analysis"
-         },
-         "target":"analysis.html",
-         "label":{
-            "EN":"Analysis",
-            "FR":"PI"
-         }
-      },
-      {
-         "type":"dropdown",
-         "children":[
-            {
-               "attrs":{
-                  "id":"createdataset"
-               },
-               "target":"createdataset.html",
-               "label":{
-                  "EN":"Create Dataset",
-                  "FR":"PI"
-               }
-            }
-         ],
-         "label":{
-            "EN":"Data Management",
-            "FR":"PI"
-         }
-      },
-      {
-         "attrs":{
-            "id":"modules"
-         },
-         "target":"modules.html",
-         "label":{
-            "EN":"Modules",
-            "FR":"PI"
-         }
+      "target": "browse.html",
+      "label": {
+        "EN": "Browse",
+        "FR": "PI"
       }
-   ],
-   "brand":{
-      "target":"index.html"
-   },
-   "languages":[
-      {
-         "lang":"EN",
-         "label":"En"
+    },
+    {
+      "attrs": {
+        "id": "maps"
       },
-      {
-         "lang":"FR",
-         "label":"Fr"
+      "target": "maps.html",
+      "label": {
+        "EN": "Maps",
+        "FR": "PI"
       }
-   ]
+    },
+    {
+      "attrs": {
+        "id": "analysis"
+      },
+      "target": "analysis.html",
+      "label": {
+        "EN": "Analysis",
+        "FR": "PI"
+      }
+    },
+    {
+      "attrs": {
+        "id": "createdataset"
+      },
+      "target": "createdataset.html",
+      "label": {
+        "EN": "Data Management",
+        "FR": "PI"
+      }
+    },
+    {
+      "attrs": {
+        "id": "modules"
+      },
+      "target": "modules.html",
+      "label": {
+        "EN": "Modules",
+        "FR": "PI"
+      }
+    }
+  ],
+  "type": "fixed-top",
+  "brand": {
+    "target": "index.html"
+  },
+  "languages": [
+    {
+      "lang": "EN",
+      "label": "En"
+    },
+    {
+      "lang": "FR",
+      "label": "Fr"
+    }
+  ]
 }

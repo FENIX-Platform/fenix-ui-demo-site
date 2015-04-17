@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>FENIX</title>
+    <title>FENIX Platform</title>
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Daniele Salvatore <daniele.salvatore [at] fao.org>">
+    <meta name="author" content="Nicola Selleri <nicola.selleri[at]fao.org>">
 
-
+    <!-- Third Party CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
 
-    <!-- Fonts-->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+    <!-- FENIX CSS -->
+    <link rel="stylesheet" href="submodules/fenix-ui-common/css/fenix-style.css">
 
-    <!-- FENIX DEFAULT -->
-    <link rel="stylesheet" href="css/fenix-interface-style.css">
-    <link rel="stylesheet" href="css/host.css">
-
-
-    <!-- data-main attribute tells require.js to load scripts/main.js after require.js loads. -->
-    <script data-main="scripts/mains/index" src="scripts/lib/require.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="css/icons/fx-favicon.ico">
 
 </head>
 <body>
 
-<!--<div class="fx-background-image"></div>-->
-
 <div class="fx-background-image"></div>
 
-
-<!--FENIX HOME HEADER-->
 <div class="container fx-home-header">
     <div class="row">
         <div class="col-xs-12">
@@ -40,13 +36,15 @@
     </div>
 </div>
 
-<div class="container fx-home-content-grid">
 
+<hr>
+
+<div class="container fx-home-content-grid">
     <div class="row">
         <div class="col-xs-12 col-md-6">
 
             <div class="fx-home-content-grid-top">
-                <h1>Overview</h1>
+                <h2>Powered by Fenix Platform</h2>
 
                 <p> An internet-based and scalable system able to meet different user requirements and adaptable to
                     support global, regional and national level projects and initiatives. The main goal is to contribute
@@ -62,7 +60,8 @@
             </div>
 
             <div class="fx-home-content-grid-bottom">
-                <h1>Main Feature</h1>
+                <br>
+                <h2>Main Feature</h2>
                 <ul>
                     <li><em>1</em> Based on Open Source software; no licensing constraints and full redistribution rights</li>
                     <li><em>2</em> Using a Service-Oriented Architecture (SOA)</li>
@@ -80,11 +79,11 @@
 
         <div class="fx-home-content-grid-top">
 
-            <h1>Categories</h1>
+            <h2>Categories</h2>
             <div class="fx-home-categories">
 
                 <div class="fx-home-ico-holder"><img alt="Visualization" src="css/icons/visualization-ico-l.svg"></div>
-                <h2>Visualization</h2>
+                <h3>Visualization</h3>
 
                 <p>The main goal of data visualization is to communicate information clearly and efficiently to users
                     via the information graphics selected, such as tables, charts and maps.</p>
@@ -93,7 +92,7 @@
 
             <div class="fx-home-categories">
                 <div class="fx-home-ico-holder"><img alt="Analysis" src="css/icons/analysis-ico-l.svg"></div>
-                <h2>Analysis</h2>
+                <h3>Analysis</h3>
 
                 <p>Analysis of data is a process of inspecting, cleaning, transforming, and modeling data with the goal
                     of discovering useful information, suggesting conclusions, and supporting decision making.</p>
@@ -101,7 +100,7 @@
 
             <div class="fx-home-categories">
                 <div class="fx-home-ico-holder"><img alt="Modules" src="css/icons/modules-ico-l.svg"></div>
-                <h2>Modules</h2>
+                <h3>Modules</h3>
 
                 <p>Examples of FENIX use in several environments and projects.</p>
             </div>
@@ -110,85 +109,34 @@
         </div>
 
         <div class="fx-home-content-grid-bottom">
-            <h1>Get Started</h1>
+            <br><br>
+            <h2>Get Started</h2>
 
             <p>FENIX is a project hosted on GitHub. We appreciate any contribution of our work. Thank you.</p>
 
             <p class="fx-strong">MIT Licensed, v0.9.8 released on November 4, 2014 | Changelog</p>
-            <img alt="GitHub" src="css/img/github-ico-l.svg" width="80px" height="35px" class="fx-git-logo">
+            <a  target="_blank" href="https://github.com/FENIX-Platform"><img alt="GitHub" src="css/img/github-ico-l.svg" width="80px" height="35px" class="fx-git-logo"></a>
         </div>
     </div>
     </div>
 </div>
 
 
+<hr>
 
 <div class="container">
-
-
-    <!-- START THE FEATURETTES
-
-    <hr>
-
-    <div class="row">
-        <div class="col-md-7">
-            <h2>First heading. <span
-                    class="text-muted">First heading.</span></h2>
-
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-                semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-                commodo.</p>
-        </div>
-        <div class="col-md-5">
-            <img alt="500x500" data-src="holder.js/500x500/auto" class="img-responsive"
-                 src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjI1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjMxcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NTAweDUwMDwvdGV4dD48L3N2Zz4=">
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="row ">
-        <div class="col-md-5">
-            <img alt="500x500" data-src="holder.js/500x500/auto" class="img-responsive"
-                 src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjI1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjMxcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NTAweDUwMDwvdGV4dD48L3N2Zz4=">
-        </div>
-        <div class="col-md-7">
-            <h2>Second heading. <span class="text-muted">Second heading.</span></h2>
-
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-                semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-                commodo.</p>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="row">
-        <div class="col-md-7">
-            <h2>Third heading. <span class="text-muted">Third heading.</span></h2>
-
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-                semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-                commodo.</p>
-        </div>
-        <div class="col-md-5">
-            <img alt="500x500" data-src="holder.js/500x500/auto" class="img-responsive"
-                 src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjI1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjMxcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NTAweDUwMDwvdGV4dD48L3N2Zz4=">
-        </div>
-    </div>-->
-
-    <hr>
-
-    <!-- /END THE FEATURETTES -->
 
     <!-- FOOTER -->
     <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
 
-        <p>2014 FENIX · <a href="#">Terms</a></p>
+        <p>2015 FENIX Platform· <a href="#">Terms</a></p>
     </footer>
 
 </div>
+
+<!-- data-main attribute tells require.js to load scripts/main.js after require.js loads. -->
+<script data-main="scripts/mains/index" src="scripts/lib/require.js"></script>
 
 </body>
 </html>

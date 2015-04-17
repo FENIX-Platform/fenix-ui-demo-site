@@ -1,0 +1,88 @@
+#unused{
+float:right;}
+#unused li{
+display:none;
+}
+
+#vals{display:block}
+.pvtVals { display:none}
+
+
+
+
+.gt-first-page {
+  height: 15px;
+  width: 15px;
+  background: url("../submodules/fenix-ui-olap/images/img/fenix-catalog-sprite-small.svg") no-repeat -135px -15px;
+  background-size: 150px 30px; }
+
+.gt-prev-page {
+  height: 15px;
+  width: 15px;
+  background: url("../submodules/fenix-ui-olap/images/img/fenix-catalog-sprite-small.svg") no-repeat -105px -15px;
+  background-size: 150px 30px; }
+
+.gt-next-page {
+  height: 15px;
+  width: 15px;
+  background: url("../submodules/fenix-ui-olap/images/img/fenix-catalog-sprite-small.svg") no-repeat -120px -15px;
+  background-size: 150px 30px; }
+
+.gt-last-page {
+  height: 15px;
+  width: 15px;
+  background: url("../submodules/fenix-ui-olap/images/img/fenix-catalog-sprite-small.svg") no-repeat -135px 0;
+  background-size: 150px 30px; }
+
+.gt-goto-page {
+  height: 15px;
+  width: 15px;
+  background: url("../submodules/fenix-ui-olap/images/img/fenix-catalog-sprite-small.svg") no-repeat -15px 0;
+  background-size: 150px 30px; }
+
+  
+  
+  
+  
+#olap_container > table > tbody {
+  border: 0; }
+  #olap_container > table > tbody > tr {
+    position: relative; }
+    #olap_container > table > tbody > tr #rows {
+      position: relative;
+      padding-left: 65px; }
+      #olap_container > table > tbody > tr #rows:before {
+        content: 'ROW';
+        position: absolute;
+        top: 5px;
+        left: 0;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase; }
+      #olap_container > table > tbody > tr #rows:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: #e4e4e4; }
+    #olap_container > table > tbody > tr .pvtCols {
+      position: relative;
+      padding-left: 65px; }
+      #olap_container > table > tbody > tr .pvtCols:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: #e4e4e4; }
+      #olap_container > table > tbody > tr .pvtCols:before {
+        content: 'COLUMN';
+        position: absolute;
+        top: 5px;
+        left: 0;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase; }
