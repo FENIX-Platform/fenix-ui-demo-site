@@ -2,8 +2,9 @@
 define([], function () {
 
         return {
-            SERVICES_BASE_ADDRESS : 'http://fenix.fao.org/d3s_fenix/msd',
+            //SERVICES_BASE_ADDRESS : 'http://fenix.fao.org/d3s_fenix/msd',
             //SERVICES_BASE_ADDRESS: "http://fenix.fao.org/d3s/msd",
+            SERVICES_BASE_ADDRESS: "http://fenix.fao.org/d3s_dev/msd",
             SERVICE_GET_DATA_METADATA: {service: "resources", queryParams: {full: true, dsd: true}},
             SERVICE_SAVE_METADATA: {service: "resources/metadata"},
             SERVICE_SAVE_DSD: {service: "resources/dsd"},
