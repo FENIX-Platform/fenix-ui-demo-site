@@ -47,6 +47,16 @@
                   "frequency":"once",
                   "function":"callback 5"
               }
+          },
+         "event_pg_6":{
+              "content":{
+                  "EN":"html/maps/page_6.html",
+                  "FR":"http://url_FR"
+              },
+              "callback":{
+                  "frequency":"once",
+                  "function":"callback 6"
+              }
           }
       }
    },
@@ -72,6 +82,13 @@
               "page":"event_pg_3",
               "label":{
                   "EN":"Percentage of Rice Production Area in Thailand (GAUL2)",
+                  "IT":"Elemento 2"
+              }
+          },
+          {
+              "page":"event_pg_6",
+              "label":{
+                  "EN":"Time Series Temperature Anomalies (1986-2015)",
                   "IT":"Elemento 2"
               }
           }
