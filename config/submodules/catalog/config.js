@@ -9,20 +9,12 @@ define(['jquery', 'fx-submodules/config/baseConfig'],
 
         /*var services = {
     
-            TOP_MENU: {
-                url: 'json/fenix-ui-topmenu_config.json',
-                active: "createdataset"
-            },
-            SERVICE_BASE_ADDRESS: "http://fenix.fao.org/d3s_dev/msd"
+            //SERVICE_BASE_ADDRESS : 'http://fenix.fao.org/d3s_fenix/msd'
+            SERVICE_BASE_ADDRESS: 'http://fenix.fao.org/d3s_dev/msd'
+    
         };*/
-
         var services = {};
         $.extend(services, config_base);
-
-        services.TOP_MENU = {
-            url: 'json/fenix-ui-topmenu_config.json',
-            active: "createdataset"
-        };
 
         return services;
     });

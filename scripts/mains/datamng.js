@@ -34,7 +34,7 @@ require([
 
     Compiler.resolve([dataEditorConfig, dataUploadConfig, dsdEditorConfig, metadataEditorConfig, catalogConfig, menuConfig, dataMngConfig],
         {
-            placeholders:  {"FENIX_CDN": "//fenixapps.fao.org/repository"},
+            placeholders: { "FENIX_CDN": "//fenixapps.fao.org/repository" },
             config: {
 
                 locale: 'en',
@@ -45,14 +45,14 @@ require([
                     backbone: "{FENIX_CDN}/js/backbone/1.1.2/backbone.min",
                     handlebars: "{FENIX_CDN}/js/handlebars/2.0.0/handlebars",
                     chaplin: "{FENIX_CDN}/js/chaplin/1.0.1/chaplin.min",
-                    amplify : '{FENIX_CDN}/js/amplify/1.1.2/amplify.min',
+                    amplify: '{FENIX_CDN}/js/amplify/1.1.2/amplify.min',
                     rsvp: '{FENIX_CDN}/js/rsvp/3.0.17/rsvp',
                     pnotify: '{FENIX_CDN}/js/pnotify/2.0.1/pnotify.custom.min',
 
                     'fx-d-m/config/config': '../../config/submodules/datamng/config',
-                    'fx-d-m/config/services': '../../config/submodules/datamng/services',
-                    'fx-cat-br/config/services' : '../../config/submodules/catalog/services'
+                    'fx-cat-br/config/config': '../../config/submodules/catalog/config',
 
+                    'fx-submodules/config/baseConfig': '../../config/submodules/config_base'
                 },
 
                 // Underscore and Backbone are not AMD-capable per default,
