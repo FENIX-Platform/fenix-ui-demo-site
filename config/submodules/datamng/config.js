@@ -16,13 +16,15 @@ define(['jquery', 'fx-submodules/config/baseConfig'],
             SERVICE_BASE_ADDRESS: "http://fenix.fao.org/d3s_dev/msd"
         };*/
 
-        var services = {};
-        $.extend(services, config_base);
+        var cfg = {};
+        $.extend(cfg, config_base);
 
-        services.TOP_MENU = {
+        cfg.TOP_MENU = {
             url: 'json/fenix-ui-topmenu_config.json',
             active: "createdataset"
         };
 
-        return services;
+        //cfg.METADATA_EDITOR_AJAX_EVENT_CALL = "config/submodules/metadataEditor/fx-editor-ajax-config_DEMO.json";
+
+        return cfg;
     });
