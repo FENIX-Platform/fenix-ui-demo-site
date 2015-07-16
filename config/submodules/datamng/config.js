@@ -24,6 +24,57 @@ define(['jquery', 'fx-submodules/config/baseConfig'],
             active: "createdataset"
         };
 
+        /*cfg.DEFAULT_META = {
+            "contextSystem" : "RLM",
+            "datasources" : ["RLM"],
+            "columns" : [
+                {
+                    "id" : "COUNTRY",
+                    "subject" : "geo",
+                    "title" : { "EN" : "Country" },
+                    "dataType" : "code",
+                    "domain" : { "codes" : [ { "idCodeList" : "GAUL", "version" : "2014" } ] }
+                },
+                {
+                    "id" : "YEAR",
+                    "subject" : "time",
+                    "title" : { "EN" : "Year" },
+                    "dataType" : "year",
+                    "domain" : { "period" : { "from" : 2000, "to" : 2015 } }
+                },
+                {
+                    "id" : "YEAR_LABEL",
+                    "title" : { "EN" : "Year" },
+                    "dataType" : "text"
+                },
+                {
+                    "id" : "QUALIFIER",
+                    "title" : { "EN" : "Qualifier" },
+                    "dataType" : "code",
+                    "domain" : { "codes" : [ { "idCodeList" : "RLM_QualifierCodeList" } ] }
+                },
+                {
+                    "id" : "SOURCE",
+                    "title" : { "EN" : "Source" },
+                    "dataType" : "code",
+                    "domain" : { "codes" : [ { "idCodeList" : "RLM_SourceCodeList" } ] }
+                },
+                {
+                    "id" : "UM",
+                    "title" : { "EN" : "Unit of measure" },
+                    "dataType" : "text"
+                },
+
+                {
+                    "id" : "VALUE",
+                    "subject" : "value",
+                    "title" : { "EN" : "Production (Tonnes)" },
+                    "dataType" : "text"
+                }
+            ]
+        };
+*/
+
         //cfg.METADATA_EDITOR_AJAX_EVENT_CALL = "config/submodules/metadataEditor/fx-editor-ajax-config_DEMO.json";
 
         return cfg;
