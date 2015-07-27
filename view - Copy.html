@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="scripts/lib/jquery.js"></script>
+    <script type="text/javascript">
+
+        var a = {
+            /*"metadata": {
+                "dddd": "eccolo"
+            },*/
+            "uid": "dan53",
+            "version": null,
+            "language": {
+                "codes": [
+                    {
+                        "code": "eng"
+                    }
+                ],
+                "idCodeList": "ISO639-2",
+                "version": "1998"
+            },
+            "languageDetails": {
+                "EN": null
+            },
+            "title": {
+                "EN": "dan53d"
+            },
+            "creationDate": "2015-04-15T12:00:00.000+02:00",
+            "characterSet": {
+                "codes": [
+                    {
+                        "code": "106"
+                    }
+                ],
+                "idCodeList": "IANAcharacterSet",
+                "version": null
+            },
+            "metadataStandardName": "FENIX",
+            "metadataStandardVersion": "1.0",
+            "metadataLanguage": {
+                "codes": [
+                    {
+                        "code": "eng"
+                    }
+                ],
+                "idCodeList": "ISO639-2",
+                "version": "1998"
+            },
+            "contacts": [
+                {
+                    "organization": {
+                        "EN": "Fff"
+                    },
+                    "organizationUnit": {
+                        "EN": null
+                    },
+                    "pointOfContact": null,
+                    "position": {
+                        "EN": null
+                    },
+                    "role": null,
+                    "specify": {
+                        "EN": null
+                    },
+                    "contactInfo": {
+                        "phone": "666",
+                        "address": null,
+                        "emailAddress": null,
+                        "hoursOfService": {
+                            "EN": null
+                        },
+                        "contactInstruction": {
+                            "EN": null
+                        }
+                    }
+                }
+            ],
+            "noDataValue": null,
+            "isRoot": true,
+            "entityPath": "meIdentification",
+            "meContent": {
+                "resourceRepresentationType": "dataset",
+                "resourceRepresentationTypeLabel": {
+                    "EN": "Dataset"
+                },
+                "isRoot": false
+            },
+            "meMaintenance": {
+                "isRoot": false,
+                "seUpdate": {
+                    "updateDate": 1436864455362,
+                    "entityPath": "meMaintenance.seUpdate",
+                    "isRoot": false
+                }
+            },
+            "dsd": {
+                "rid": "63_48",
+                "isRoot": false
+            }
+        };
+
+        var defaultMeta={ dsd: { dddd: "eccolo" } };
+
+        var toRet = $.extend(true, {}, defaultMeta, a);
+
+        console.log(toRet);
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>
