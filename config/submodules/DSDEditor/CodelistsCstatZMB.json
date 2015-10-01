@@ -1,0 +1,86 @@
+﻿[
+    {
+        "value": "GAUL0|2014",
+        "text": {
+            "EN": "GAUL 0"
+        },
+        "subject": "geo"
+    },
+    {
+        "value": "CountrySTAT_commodityList",
+        "text": {
+            "EN": "CountrySTAT Commodity List"
+        },
+        "subject": "item"
+    },
+    {
+        "value": "CountrySTAT_domains",
+        "text": {
+            "EN": "CountrySTAT domains"
+        },
+        "subject": "item"
+    },
+    {
+        "value": "CountrySTAT_Indicators",
+        "text": {
+            "EN": "CountrySTAT Indicators"
+        },
+        "subject": "item"
+    },
+    {
+        "value": "CountrySTAT_Labour",
+        "text": {
+            "EN": "CountrySTAT Labour"
+        },
+        "subject": "item"
+    },
+    {
+        "value": "CountrySTAT_LandUse",
+        "text": {
+            "EN": "CountrySTAT LandUse"
+        },
+        "subject": "item"
+    },
+    {
+        "value": "CountrySTAT_population",
+        "text": {
+            "EN": "CountrySTAT Population"
+        },
+        "subject": "item"
+    },
+    {
+        "value": "CountrySTAT_pricesCategories",
+        "text": {
+            "EN": "CountrySTAT Prices Categories"
+        },
+        "subject": "item"
+    },
+    {
+        "value": "HS|2012",
+        "text": {
+            "EN": "HS 2012"
+        },
+        "subject": "item"
+    },
+    {
+        "value": "CPC|2.1",
+        "text": {
+            "EN": "CPC 2.1"
+        },
+        "subject": "item"
+    },
+    {
+        "value": "CountrySTAT_valueAdded",
+        "text": {
+            "EN": "CountrySTAT Value Added"
+        },
+        "subject": "item"
+    },
+    {
+        "value": "CountrySTAT_UM",
+        "text": {
+            "EN": "CountrySTAT UM"
+        },
+        "subject": "um"
+    }
+]
