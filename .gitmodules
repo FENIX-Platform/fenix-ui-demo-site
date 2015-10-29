@@ -37,3 +37,6 @@
 [submodule "submodules/fenix-ui-data-management"]
 	path = submodules/fenix-ui-data-management
 	url = https://github.com/FENIX-Platform/fenix-ui-data-management
+[submodule "submodules/fenix-ui-metadata-editor2"]
+	path = submodules/fenix-ui-metadata-editor2
+	url = ../fenix-ui-metadata-editor2.git
