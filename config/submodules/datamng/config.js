@@ -76,7 +76,7 @@ define(['jquery', 'fx-submodules/config/baseConfig'],
 */
 
 
-        cfg.DSD_EDITOR_CONTEXT_SYSTEM = "cstat_zmb";
+        cfg.DSD_EDITOR_CONTEXT_SYSTEM = "demo1";
         cfg.DSD_EDITOR_DATASOURCES = ["D3S"];
 
         //cfg.METADATA_EDITOR_AJAX_EVENT_CALL = "config/submodules/metadataEditor/fx-editor-ajax-config_PROD.json";

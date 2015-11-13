@@ -16,7 +16,7 @@ define(['jquery', 'fx-submodules/config/baseConfig'],
         var services = {};
         $.extend(services, config_base);
 
-        services.CATALOG_BLANK_FILTER = 'config/submodules/catalog/zmb-catalog-blank-filter.json';
+        services.CATALOG_BLANK_FILTER = 'config/submodules/catalog/demo1-catalog-blank-filter.json';
 
         return services;
     });
