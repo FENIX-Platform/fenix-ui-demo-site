@@ -1,0 +1,51 @@
+﻿The new CountrySTAT is not working well on slow internet connections
+The system is not too user friendly also compared to the old one, the user is looking mainly for data, that are not immediately accessible. Maybe insert something similar to the old one and have a sort of list of domains
+
+Trade data: A revision of the codes for trade is needed as the system at the moment recognize only the HS2012. All the 5 versions of the HS will be inserted in the code list
+
+Unit: Add: Household, Ton/Ha
+
+Codes: Add : 
+1.	ISIC codification for the national account data
+2.	"total" for agricultural population
+3.	GAUL codes for Muchinga province
+
+Metadata
+	Evaluating if some fields can be removed 
+	Insert automatically "value assigned for missing data=m"
+	Insert as dropdown list the different domains (able to retrieve the data)
+	When dealing with certain types of data (e.g. value added) allow to select multiple options when there is a list 
+
+Indicators: 
+	Add: 
+1.	wholesale price
+2.	CPI
+3.	annual average price
+4.	re-import
+5.	fish species and name of water body (rivers and lakes): Zambia to send the lists to FAO
+	Modify:
+1.	sex (instead of gender)
+
+IT
+Remove the 0s after comma (for population)
+Give the possibility to display or not the decimals
+Give the possibility to display or not the codes in the table
+(D) Does it work?	Check the "creation date" behavior in the metadata, it overwrites the user's choice
+Clicking on logout does not logout (check the logout's popup window)
+Allow to change the name of the column's in the DSD (as it does not affect the structure)
+When uploading a CSV in the data editor, and it gives an error, give a better list of unrecognized codes and duplicated key values
+Automatically sort the columns of the DSD by type: dimensions, value, and others
+Disable save button in DSD editor when pushing the first time the button and insert the "working icon"
+In the data editor wait for the structure to load before allowing to upload a CSV
+Add a section where the deleted dataset are stored 
+Ensure that if "not for the public" is selected, the dataset can be accessed only by a restricted audience. To define what restricted means
+At the moment anybody can change all the datasets: to change the data access mechanism
+Give the opportunity to choose the method of update when adding or updating data, the old ones will be replaced or kept?
+
+
+Suggestions
+
+-	Not bad idea to have a DSD structure as default
+-	Monitoring how many users go in the website
+-	Add a feedback space to let users write their opinion 
+-	Tables with only the metadata should not be displayed when selecting “dataset” in the “search and visualize”. A specific field called “metadata” should be added
