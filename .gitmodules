@@ -42,4 +42,4 @@
 	url = ../fenix-ui-metadata-editor2.git
 [submodule "submodules/fenix-ui-datamanagement-commons"]
 	path = submodules/fenix-ui-datamanagement-commons
-	url = https://github.com/FENIX-Platform/fenix-ui-datamanagement-commons.git
+	url = ../fenix-ui-datamanagement-commons.git
