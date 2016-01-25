@@ -3,23 +3,28 @@
 require([
     '../../submodules/fenix-ui-common/js/Compiler',
     '../../submodules/fenix-ui-common/js/paths',
+    '../../submodules/fenix-ui-datamanagement-commons/js/paths',
     '../../submodules/fenix-ui-DataEditor/js/paths',
-    '../../submodules/fenix-ui-dataUpload/js/paths',
+    //'../../submodules/fenix-ui-dataUpload/js/paths',
     '../../submodules/fenix-ui-DSDEditor/js/paths',
     '../../submodules/fenix-ui-metadata-editor/js/paths',
     '../../submodules/fenix-ui-catalog/js/paths',
     '../../submodules/fenix-ui-menu/js/paths',
     '../../submodules/fenix-ui-data-management/src/js/paths'
-], function (Compiler, FenixCommons, DataEditor, DataUpload, DSDEditor, MetadataEditor, Catalog, Menu, DataMng) {
+//], function (Compiler, FenixCommons, DataMngCommons, DataEditor, DataUpload, DSDEditor, MetadataEditor, Catalog, Menu, DataMng) {
+], function (Compiler, FenixCommons, DataMngCommons, DataEditor, DSDEditor, MetadataEditor, Catalog, Menu, DataMng) {
 
     var fenixCommonConfig = FenixCommons;
     fenixCommonConfig.baseUrl = '../../submodules/fenix-ui-common/js';
 
+    var dataMngCommonsConfig = DataMngCommons;
+    dataMngCommonsConfig['baseUrl'] = '../../submodules/fenix-ui-datamanagement-commons/js';
+
     var dataEditorConfig = DataEditor;
     dataEditorConfig['baseUrl'] = '../../submodules/fenix-ui-DataEditor/js';
 
-    var dataUploadConfig = DataUpload;
-    dataUploadConfig['baseUrl'] = '../../submodules/fenix-ui-dataUpload/js/';
+    /*var dataUploadConfig = DataUpload;
+    dataUploadConfig['baseUrl'] = '../../submodules/fenix-ui-dataUpload/js/';*/
 
     var dsdEditorConfig = DSDEditor;
     dsdEditorConfig['baseUrl'] = '../../submodules/fenix-ui-DSDEditor/js';
@@ -36,7 +41,8 @@ require([
     var dataMngConfig = DataMng;
     dataMngConfig['baseUrl'] = '../../submodules/fenix-ui-data-management/src/js';
 
-    Compiler.resolve([fenixCommonConfig, dataEditorConfig, dataUploadConfig, dsdEditorConfig, metadataEditorConfig, catalogConfig, menuConfig, dataMngConfig],
+    //Compiler.resolve([fenixCommonConfig, dataMngCommonsConfig, dataEditorConfig, dataUploadConfig, dsdEditorConfig, metadataEditorConfig, catalogConfig, menuConfig, dataMngConfig],
+    Compiler.resolve([fenixCommonConfig, dataMngCommonsConfig, dataEditorConfig, dsdEditorConfig, metadataEditorConfig, catalogConfig, menuConfig, dataMngConfig],
         {
             placeholders: { "FENIX_CDN": "//fenixapps.fao.org/repository" },
             config: {
