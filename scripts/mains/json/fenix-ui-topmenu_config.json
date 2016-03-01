@@ -1,0 +1,50 @@
+{
+   "items":[
+      {
+         "attrs":{
+            "id":"download"
+         },
+         "target":"download.html",
+         "label":{
+            "EN":"Download",
+            "FR":"PI"
+         }
+      },
+      {
+         "attrs":{
+            "id":"analysis"
+         },
+         "target":"analysis.html",
+         "label":{
+            "EN":"Search and Analyze",
+            "FR":"PI"
+         }
+      },
+      {
+         "attrs":{
+            "id":"createdataset"
+         },
+         "target":"createdataset.html",
+         "label":{
+            "EN":"Data Management",
+            "FR":"PI"
+         }
+      }
+   ],
+
+   "type" : "fixed-top",
+
+   "brand":{
+      "target":"index.html"
+   },
+   "languages":[
+      {
+         "lang":"EN",
+         "label":"En"
+      },
+      {
+         "lang":"FR",
+         "label":"Fr"
+      }
+   ]
+}
